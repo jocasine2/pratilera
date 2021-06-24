@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 bg-white shadow rounded">
+
+          <!-- estabelecimentos -->
+          <section>
+              <div class="d-flex justify-content-center">
+                  <div class="col-md-12">
+                  <!-- info estabelecimento -->
+                  <div class="row align-items-center">
+                      <div class="col">
+                          <img src="assets/images/logo_estabelecimento.png" class="img-fluid w-50" alt="..."></div>
+                      <div class="col">
+                          <a href="javascript: alert('getLocaliacao()')"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                      </div>
+                      <div class="col">3 km</div>
+                      <div class="col">08:00 - 18:00</div>
+                  </div>
+                  <!-- /info estabelecimento -->
+                  </div>
+              </div>
+
+              <!-- Bootstrap carousel-->
+              <div class="col-md-12">
+                  <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                      <!-- Bootstrap inner [slides]-->
+                      <div class="carousel-inner">
+                          <!-- Carousel item-->
+                          <div class="carousel-item active">
+                              <div class="media">
+                                  <div class="media-body">
+                                      <div class="row product-grid-line">
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- Carousel item-->
+                          <div class="carousel-item">
+                              <div class="media">
+                                  <div class="media-body">
+                                      <div class="row product-grid-line">
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- Carousel slide-->
+                          <div class="carousel-item">
+                              <div class="media">
+                                  <div class="media-body">
+                                      <div class="row product-grid-line">
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                          <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- /Bootstrap inner [slides]-->
+                      <div class="col-md-12">
+                          <!-- Bootstrap carousel indicators [nav] -->
+                              <ol class="carousel-indicators carousel-indicators-slider-produtos">
+                                  <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                              </ol>
+                          <!-- /Bootstrap carousel indicators [nav] -->
+                      </div>
+
+                  </div>
+              </div>
+              <!-- /Bootstrap carousel-->
+
+              <!-- ir para a loja -->
+              <div class="col-md-12 d-flex justify-content-center">
+                      <button type="button" class="btn btn-warning btn-ir-pra-loja">Ir pra loja</button>
+              </div>
+              <!-- /ir par a loja -->
+          </section>
+          <!-- /estabelecimentos -->
+          </div>
+
+      </div>
+  </div>
+  <hr>
+

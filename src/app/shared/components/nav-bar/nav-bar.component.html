@@ -1,0 +1,65 @@
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">Pratilera</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample07">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="/pratilera.com">Home <span class="sr-only">(current)</span></a> -->
+        </li>
+      </ul>
+
+      <form class="form-inline has-search-right">
+        <div class="input-group has-validation">
+          <div class="input-group-prepend">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Todos</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Loja Zphone</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Auto Car</a>
+              <a class="dropdown-item" href="#">Boat Star</a>
+              <a class="dropdown-item" href="#">Casa&Cia</a>
+            </div>
+          </div>
+
+          <a href="#" class="form-control-feedback"><i class="fas fa-microphone"></i></a>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+
+        </div>
+
+            <div *ngIf="true; else elseBlock">
+             <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Olá, Joaquim!
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" routerLink="/home">Home</a>
+                  <a class="dropdown-item" routerLink="/meus-dados">Meus Dados</a>
+                  <a class="dropdown-item" routerLink="/meus-pedidos">Meus Pedidos</a>
+                  <a class="dropdown-item" routerLink="/lista-de-desejos">Lista de Desejos</a>
+                  <a class="dropdown-item" routerLink="/sac">SAC</a>
+                  <a class="dropdown-item" routerLink="/alterar-senha">Alterar a Senha</a>
+                  <a class="dropdown-item" routerLink="/notificacoes">Notificações</a>
+                  <a class="dropdown-item" routerLink="/chat">Chat</a>
+                  <a class="dropdown-item" routerLink="/login">Sair</a>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <ng-template #elseBlock>
+              <div class="nome-usuario"><a href="login.php">Entrar</a></div>
+            </ng-template>
+
+      </form>
+
+    </div>
+  </div>
+</nav>
+<!-- fim navbar -->
