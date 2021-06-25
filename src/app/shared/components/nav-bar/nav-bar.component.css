@@ -1,0 +1,30 @@
+.nome-usuario a{
+  display: block;
+  padding: .5rem 1rem;
+  color: #fffdff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+}
+
+.has-search-right {
+  position: relative;
+}
+
+.has-search-right .form-control {
+  padding-right: 2.375rem;
+}
+
+.has-search-right .form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 8.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+}

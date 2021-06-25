@@ -1,0 +1,13 @@
+/*card produto detalhe do produto*/
+.price {
+  color: #007bff;
+}
+
+.row-product-detail{
+  margin-top: 30px;
+}
+
+.product-detail{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

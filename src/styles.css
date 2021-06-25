@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-warning {
+  color: white;
+  background-color: #ff8028;
+  border-color: #ff8028;
+}
+
+.btn-warning:hover {
+  color: white;
+  background-color: #da691b;
+  border-color: #da691b;
+}
+
+.btn-warning:active {
+  color: white !important;
+  background-color: #da691b !important;
+  border-color: #da691b !important;
+}
+
+.btn-warning:clicked {
+  width: 70px;
+  height: 74px;
+}
+
+.carousel-indicators li {
+  background-color: #ff8028;
+}

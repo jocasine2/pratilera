@@ -1,0 +1,12 @@
+.price {
+  color: #007bff!important;
+}
+
+.btn-comprar{
+  color: white;
+}
+
+a.product-detail {
+  text-decoration: none;
+  color: inherit;
+}

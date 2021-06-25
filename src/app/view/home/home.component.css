@@ -1,0 +1,93 @@
+#carouselpromo{
+  margin-bottom: 25px;
+}
+
+/*produto card*/
+.price {
+  color: #007bff!important;
+}
+
+/*.card-product{
+  width: 14.3rem;
+}
+*/
+.btn-comprar{
+  color: white;
+}
+/*/produto card*/
+
+/*card estabelecimento*/
+.btn-ir-pra-loja{
+  color: white;
+  margin-bottom: 15px;
+}
+/*card estabelecimento*/
+
+.product-grid-line{
+  margin-bottom: 10px;
+}
+
+/* custom height carousel */
+.carousel .item{
+  height: 100px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+a.product-detail {
+  text-decoration: none;
+  color: inherit;
+}
+
+.detail-product-description{
+  padding-bottom: 10px;
+}
+
+.row-product-detail{
+  margin-top: 30px;
+}
+
+.product-detail{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/**/
+.btn-warning {
+   color: white;
+  background-color: #ff8028;
+  border-color: #ff8028;
+}
+
+.btn-warning:hover {
+  color: white;
+  background-color: #da691b;
+  border-color: #da691b;
+}
+
+.btn-warning:active {
+  color: white !important;
+  background-color: #da691b !important;
+  border-color: #da691b !important;
+}
+
+.btn-warning:clicked {
+  width: 70px;
+  height: 74px;
+}
+
+
+/*slider produtos*/
+.carousel-indicators-slider-produtos{
+  position: inherit;
+}
+/*/slider produtos*/
+
+.carousel-indicators li {
+  background-color: #ff8028;
+}
