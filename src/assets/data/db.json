@@ -23,21 +23,21 @@
   "estabelecimentos": [
     {
       "id": 1,
-      "model": "BMW X7",
-      "color": "Preto",
-      "price": 455.95
+      "nome": "Casa de carne Silva",
+      "distancia": "3 km",
+      "horario": "08:00 - 18:00"
     },
     {
       "id": 2,
-      "model": "Mercedes benz c180",
-      "color": "Azul",
-      "price": 194.9
+      "nome": "Imóveis Neto",
+      "distancia": "7 km",
+      "horario": "08:00 - 18:00"
     },
     {
       "id": 3,
-      "model": "Land Rover Range Rover Velar",
-      "color": "Branco",
-      "price": 377.38
+      "nome": "ZigZag Aviamentos",
+      "distancia": "8 km",
+      "horario": "08:00 - 18:00"
     }
   ]
 }

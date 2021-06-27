@@ -9,12 +9,17 @@
                   <!-- info estabelecimento -->
                   <div class="row align-items-center">
                       <div class="col">
-                          <img src="assets/images/logo_estabelecimento.png" class="img-fluid w-50" alt="..."></div>
+                        <div class="col-md-12">
+                          <img src="assets/images/logo_estabelecimento.png" class="img-fluid w-50" alt="...">
+                        </div>
+
+                      </div>
+
                       <div class="col">
                           <a href="javascript: alert('getLocaliacao()')"><i class="fas fa-map-marker-alt"></i> Localização</a>
                       </div>
-                      <div class="col">3 km</div>
-                      <div class="col">08:00 - 18:00</div>
+                      <div class="col">{{estabelecimento.distancia}}</div>
+                      <div class="col">{{estabelecimento.horario}}</div>
                   </div>
                   <!-- /info estabelecimento -->
                   </div>
@@ -22,7 +27,7 @@
 
               <!-- Bootstrap carousel-->
               <div class="col-md-12">
-                  <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                  <div class="carousel slide" id="carouselExampleIndicators{{estabelecimento.id}}" data-ride="carousel">
                       <!-- Bootstrap inner [slides]-->
                       <div class="carousel-inner">
                           <!-- Carousel item-->
@@ -71,9 +76,9 @@
                       <div class="col-md-12">
                           <!-- Bootstrap carousel indicators [nav] -->
                               <ol class="carousel-indicators carousel-indicators-slider-produtos">
-                                  <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                                  <li class="active" attr.data-target="#carouselExampleIndicators{{estabelecimento.id}}" data-target="" data-slide-to="0"></li>
+                                  <li attr.data-target="#carouselExampleIndicators{{estabelecimento.id}}" data-slide-to="1" class=""></li>
+                                  <li attr.data-target="#carouselExampleIndicators{{estabelecimento.id}}" data-slide-to="2" class=""></li>
                               </ol>
                           <!-- /Bootstrap carousel indicators [nav] -->
                       </div>
@@ -89,9 +94,9 @@
               <!-- /ir par a loja -->
           </section>
           <!-- /estabelecimentos -->
-          </div>
 
       </div>
   </div>
-  <hr>
+</div>
+<br>
 

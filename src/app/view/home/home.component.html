@@ -1,4 +1,5 @@
 <app-nav-bar></app-nav-bar>
 <app-carrosel-promo></app-carrosel-promo>
-<app-card-estabelecimento></app-card-estabelecimento>
+
+<app-card-estabelecimento *ngFor="let estabelecimento of estabelecimentos" [estabelecimento] = "estabelecimento">{{estabelecimento.id}}</app-card-estabelecimento>
 <app-footer></app-footer>

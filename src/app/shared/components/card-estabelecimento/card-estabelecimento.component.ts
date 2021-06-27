@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Estabelecimento } from './../../../models/estabelecimento';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-estabelecimento',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-estabelecimento.component.css']
 })
 export class CardEstabelecimentoComponent implements OnInit {
+
+  @Input() estabelecimento!: Estabelecimento;
 
   constructor() { }
 

@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
    // Chama o serviço para obtém todos os carros
    getEstabelecimentos() {
     this.estabelecimentosService.getEstabelecimentos().subscribe((estabelecimento: Estabelecimento[]) => {
-      this.estabelecimento = estabelecimento;
+      this.estabelecimentos = estabelecimento;
     });
   }
 
