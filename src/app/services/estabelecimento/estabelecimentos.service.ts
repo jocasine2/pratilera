@@ -10,10 +10,10 @@ import { Estabelecimento } from '../../models/estabelecimento';
 
 export class EstabelecimentosService {
 
-  url = 'http://localhost:3000/estabelecimentos'; // api rest fake
+  // url = 'http://localhost:3000/estabelecimentos'; // api rest fake
   // url = '/api/mobile/v1/retail-company/list?page=1';
 
-  // url = 'http://pratilera.fabricacrp.com.br/api/mobile/v1/retail-company/list?page=1';
+  url = 'http://pratilera.fabricacrp.com.br/api/mobile/v1/retail-company/list?page=1';
 
 
 

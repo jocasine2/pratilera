@@ -21,10 +21,18 @@ export class HomeComponent implements OnInit {
     this.getEstabelecimentos();
   }
 
+    // Chama o serviço para obtém todos os carros
+    getEstabelecimentosmodelo() {
+      this.estabelecimentosService.getEstabelecimentos().subscribe((Response: any) => {
+        console.log(Response.data);
+      })
+    }
+
    // Chama o serviço para obtém todos os carros
    getEstabelecimentos() {
-    this.estabelecimentosService.getEstabelecimentos().subscribe((estabelecimento: Estabelecimento[]) => {
-      this.estabelecimentos = estabelecimento;
+    this.estabelecimentosService.getEstabelecimentos().subscribe((Response: any) => {
+      this.estabelecimentos = Response.data;
+      console.log(this.estabelecimentos)
     });
   }
 

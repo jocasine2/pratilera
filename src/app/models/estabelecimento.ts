@@ -1,6 +1,6 @@
 export interface Estabelecimento {
-    id: number;
-    nome: string;
-    distancia: string;
-    horario: string;
+  cnpj: string
+  fantasy_name: string
+  id: string
+  responsible: string
 }
