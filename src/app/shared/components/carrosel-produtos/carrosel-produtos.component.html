@@ -1,1 +1,41 @@
-<p>carrosel-produtos works!</p>
+
+
+<div *ngFor="let pagina in produtos.length/4; let i = index">
+  {{i}}
+  <!-- <div *ngFor="let produto of produtos">
+    {{produto.product_name}}
+  </div> -->
+</div>
+
+<div class="carousel slide" id="carouselExampleIndicators{{store_id}}" data-ride="carousel">
+  <!-- Bootstrap inner [slides]-->
+  <div class="carousel-inner">
+
+      <!-- Carousel item-->
+      <div class="carousel-item active">
+          <div class="media">
+              <div class="media-body">
+                  <div class="row product-grid-line">
+                      <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                      <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                      <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                      <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /Carousel item -->
+
+  </div>
+  <!-- /Bootstrap inner [slides]-->
+  <div class="col-md-12">
+      <!-- Bootstrap carousel indicators [nav] -->
+          <ol class="carousel-indicators carousel-indicators-slider-produtos">
+              <li class="active" attr.data-target="#carouselExampleIndicators{{store_id}}" data-target="" data-slide-to="0"></li>
+              <li attr.data-target="#carouselExampleIndicators{{store_id}}" data-slide-to="1" class=""></li>
+              <li attr.data-target="#carouselExampleIndicators{{store_id}}" data-slide-to="2" class=""></li>
+          </ol>
+      <!-- /Bootstrap carousel indicators [nav] -->
+  </div>
+
+</div>

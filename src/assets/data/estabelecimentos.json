@@ -1,0 +1,29 @@
+{
+  "estabelecimentos": [
+    {
+      "current_page":1,
+      "data":[{
+              "id":"3c3d2bd8-e765-4050-893d-a7ef1f2ecb4b"
+              ,"cnpj":"82857798000157"
+              ,"fantasy_name":"TESTE FRANQUIA"
+              ,"responsible":"Carol"}
+              ,{
+                "id":"16f1d30f-2ad2-4a0e-a23b-3c0c459d4e3c"
+                ,"cnpj":"35350726000139"
+                ,"fantasy_name":"Teste"
+                ,"responsible":"Victor"
+              }
+      ]
+        ,"first_page_url":"http:\/\/pratilera.fabricacrp.com.br\/api\/mobile\/v1\/retail-company\/list?page=1"
+        ,"from":1
+        ,"last_page":1
+        ,"last_page_url":"http:\/\/pratilera.fabricacrp.com.br\/api\/mobile\/v1\/retail-company\/list?page=1"
+        ,"next_page_url":null
+        ,"path":"http:\/\/pratilera.fabricacrp.com.br\/api\/mobile\/v1\/retail-company\/list"
+        ,"per_page":10
+        ,"prev_page_url":null
+        ,"to":2
+        ,"total":2
+    }
+  ]
+}

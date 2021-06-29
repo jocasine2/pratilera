@@ -19,6 +19,7 @@ import { DetalheProdutoComponent } from './view/detalhe-produto/detalhe-produto.
 import { MenuDetalheProdutoComponent } from './shared/components/menu-detalhe-produto/menu-detalhe-produto.component';
 import { CardProdutoDetalheProdutoComponent } from './shared/components/card-produto-detalhe-produto/card-produto-detalhe-produto.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarComponent } from './view/car/car.component';
 
 
 const appRoutes: Routes = [
@@ -29,6 +30,8 @@ const appRoutes: Routes = [
           { path: 'login', component: LoginComponent }
         , { path: 'home', component: HomeComponent }
         , { path: 'detalhe-produto', component: DetalheProdutoComponent }
+        , { path: 'carros', component: CarComponent }
+        , { path: '', component: HomeComponent }
         // , {path: '**', component: HomeComponent }
       ]
   }
@@ -49,7 +52,8 @@ const appRoutes: Routes = [
     LoginComponent,
     DetalheProdutoComponent,
     MenuDetalheProdutoComponent,
-    CardProdutoDetalheProdutoComponent
+    CardProdutoDetalheProdutoComponent,
+    CarComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes)
