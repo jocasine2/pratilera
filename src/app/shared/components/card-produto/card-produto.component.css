@@ -10,3 +10,11 @@ a.product-detail {
   text-decoration: none;
   color: inherit;
 }
+
+.card-text-produto{
+  height: 180px;
+}
+
+.card-product{
+  height: 100%;
+}

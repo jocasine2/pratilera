@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,7 +20,15 @@ import { MenuDetalheProdutoComponent } from './shared/components/menu-detalhe-pr
 import { CardProdutoDetalheProdutoComponent } from './shared/components/card-produto-detalhe-produto/card-produto-detalhe-produto.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarComponent } from './view/car/car.component';
+import { CarouselItemComponent } from './shared/components/carousel-item/carousel-item.component';
+import { CarouselIndicatorsComponent } from './shared/components/carousel-indicators/carousel-indicators.component';
 
+// **************************************************
+import ptBr from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(ptBr);
+// **************************************************
 
 const appRoutes: Routes = [
   {
@@ -29,7 +37,7 @@ const appRoutes: Routes = [
     , children: [
           { path: 'login', component: LoginComponent }
         , { path: 'home', component: HomeComponent }
-        , { path: 'detalhe-produto', component: DetalheProdutoComponent }
+        , { path: 'detalhe-produto/:product_id/:store_id', component: DetalheProdutoComponent }
         , { path: 'carros', component: CarComponent }
         , { path: '', component: HomeComponent }
         // , {path: '**', component: HomeComponent }
@@ -53,7 +61,9 @@ const appRoutes: Routes = [
     DetalheProdutoComponent,
     MenuDetalheProdutoComponent,
     CardProdutoDetalheProdutoComponent,
-    CarComponent
+    CarComponent,
+    CarouselItemComponent,
+    CarouselIndicatorsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes)
@@ -61,7 +71,11 @@ const appRoutes: Routes = [
     , BrowserModule
     , AppRoutingModule
   ],
-  providers: [],
+  providers: [
+     // ************************************
+     { provide: LOCALE_ID, useValue: 'pt' },
+     // ************************************
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

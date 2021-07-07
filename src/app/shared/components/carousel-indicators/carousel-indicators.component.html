@@ -1,0 +1,6 @@
+<div *ngIf="!numero_pagina; else loggedOut">
+  <li class="active" attr.data-target="#carouselExampleIndicators{{store_id}}" attr.data-slide-to="{{numero_pagina}}"></li>
+</div>
+<ng-template #loggedOut>
+  <li attr.data-target="#carouselExampleIndicators{{store_id}}" attr.data-slide-to="{{numero_pagina}}"></li>
+</ng-template>

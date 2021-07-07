@@ -2,21 +2,14 @@
   <div class="row">
       <div class="col-md-12 bg-white shadow rounded">
 
-
           <!-- estabelecimentos -->
           <section>
-              <!-- informações do estabelecimento -->
               <div class="d-flex justify-content-center">
                   <div class="col-md-12">
                   <!-- info estabelecimento -->
                   <div class="row align-items-center">
                       <div class="col">
-                        <div class="col-md-12">
-                          <img src="assets/images/logo_estabelecimento.png" class="img-fluid w-50" alt="...">
-                        </div>
-
-                      </div>
-
+                          <img src="assets/images/logo_estabelecimento.png" class="img-fluid w-50" alt="..."></div>
                       <div class="col">
                           <a href="javascript: alert('getLocaliacao()')"><i class="fas fa-map-marker-alt"></i> Localização</a>
                       </div>
@@ -26,23 +19,23 @@
                   <!-- /info estabelecimento -->
                   </div>
               </div>
-              <!-- /informações do estabelecimento -->
 
               <!-- Bootstrap carousel-->
               <div class="col-md-12">
-                <app-carrosel-produtos [store_id]="estabelecimento.id" ></app-carrosel-produtos>
+                <app-carrosel-produtos [store_id]="estabelecimento.id"></app-carrosel-produtos>
               </div>
               <!-- /Bootstrap carousel-->
 
               <!-- ir para a loja -->
               <div class="col-md-12 d-flex justify-content-center">
-                      <button type="button" class="btn btn-warning btn-ir-pra-loja">Ir pra loja</button>
+                <button type="button" class="btn btn-warning btn-ir-pra-loja">Ir pra loja</button>
               </div>
               <!-- /ir par a loja -->
           </section>
           <!-- /estabelecimentos -->
+          </div>
 
       </div>
   </div>
-</div>
-<br>
+  <hr>
+

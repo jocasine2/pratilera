@@ -3,7 +3,7 @@ import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Produto } from '../../models/produto';
-
+import{ GlobalConstants } from '../../shared/global-constants';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +21,9 @@ export class ProdutosEstabelecimentoService {
 
   // Obtem todos os produtos do estabelecimento
   getProdutosEstabelecimento(sotre_id: string): Observable<Produto[]> {
-    return this.httpClient.get<Produto[]>('http://pratilera.fabricacrp.com.br/api/mobile/v1/store/store-product/list?store_id='+sotre_id+'&page=1')
+    let url = GlobalConstants.apiURL+'/api/mobile/v1/store/store-product/list?store_id='+sotre_id+'&page=1';
+
+    return this.httpClient.get<Produto[]>(url)
       .pipe(
         retry(2),
         catchError(this.handleError))

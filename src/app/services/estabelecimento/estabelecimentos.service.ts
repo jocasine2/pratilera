@@ -3,17 +3,21 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { Estabelecimento } from '../../models/estabelecimento';
-
+import{ GlobalConstants } from '../../shared/global-constants';
 @Injectable({
   providedIn: 'root'
 })
 
 export class EstabelecimentosService {
 
-  url = 'http://pratilera.fabricacrp.com.br/api/mobile/v1/store/list?page=1';
+  // url = 'http://10.1.0.67:896/api/mobile/v1/store/list?page=1';
+  url = GlobalConstants.apiURL+'/api/mobile/v1/store/list?page=1';
 
   // injetando o HttpClient
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+
+    console.log();
+   }
 
   // Headers
   httpOptions = {

@@ -2,3 +2,6 @@
   margin-bottom: 10px;
 }
 
+.carousel-indicators-slider-produtos{
+  position: inherit !important;
+}

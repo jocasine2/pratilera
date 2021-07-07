@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
     // this.getCars();
   }
 
+
   // defini se um carro será criado ou atualizado
   saveCar(form: NgForm) {
     if (this.car.id !== undefined) {

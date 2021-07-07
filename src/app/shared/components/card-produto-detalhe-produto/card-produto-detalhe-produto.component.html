@@ -3,21 +3,20 @@
       <div class="row align-items-center">
       <div class="col-md-6">
           <a class="product-detail" href="produto_detalhe.php">
-              <img class="card-img-top" src="assets/images/imagem_produto.jpeg" alt="Card image cap">
+              <img class="card-img-top" attr.src="{{apiURL+produto.product_images[0]}}" alt="Card image cap">
           </a>
       </div>
       <div class="col-md-6 card-body">
           <!-- <div class="card-body"> -->
-              <h5 class="card-title">Moto G5S</h5>
-              <p class="card-text">Desenvolvido com tecnologia de ponta para você que quer realiza realizar tudo
-          rapidamente.</p>
+              <h5 class="card-title">{{produto.product_name}}</h5>
+              <p class="card-text" [innerHTML]="produto.product_short_description"></p>
               <div class="buy d-flex justify-content-between align-items-center"><a class="product-detail" href="produto_detalhe.php">
                   </a><div class="row"><a class="product-detail" href="produto_detalhe.php">
                       </a><a class="product-detail" href="produto_detalhe.php">
                           <div class="col">
                               <div class="price">
                                   <strong>
-                                      <h2>R$125,00</h2>
+                                      <h2>{{produto.product_price  | currency: 'BRL'}}</h2>
                                   </strong>
                               </div>
                           </div>
@@ -31,32 +30,7 @@
               </div>
   </div>
 
-  <div class="col-md-12 card-body detail-product-description">
-      <strong>Descrição:</strong>
-      <p>Desenvolvido com tecnologia de ponta para você que quer realizar tudo
-          rapidamente, o Smartphone Motorola Moto G5S conta com processador octa-core ultrarrápido.
-           Com câmera de ótima qualidade você pode tirar fotos incríveis e super...
-      </p>
-      <div>
-          <strong style="display:inline">Tamanho de tela:</strong>
-          <p style="display:inline">(159,28 mm x 76,24 mm x 8,49 mm)</p>
-      </div>
-      <div>
-          <strong style="display:inline">Memoria interna:</strong>
-          <p style="display:inline">64 GB</p>
-      </div>
-      <div>
-          <strong style="display:inline">Câmera traseira principal:</strong>
-          <p style="display:inline">12 Mpx</p>
-      </div>
-      <div>
-          <strong style="display:inline">Câmera frontal  principal:</strong>
-          <p style="display:inline">8 Mpx</p>
-      </div>
-      <div>
-          <strong style="display:inline">Reconhecimento de impressão digital:</strong>
-          <p style="display:inline">Sim</p>
-      </div>
+  <div class="col-md-12 card-body detail-product-description" [innerHTML]= "'<strong>Descrição:</strong>'+produto.product_long_description">
   </div>
 </div>
   </div>

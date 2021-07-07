@@ -1,0 +1,36 @@
+<div *ngIf="!numero_pagina; else loggedOut">
+  <!-- Carousel item-->
+    <!-- <div attr.class="carousel-item active"> -->
+      <div class="media">
+          <div class="media-body">
+              <div class="row product-grid-line">
+                  <div class="col-md-3" *ngFor="let produto of produtos_filtrados">
+                    <app-card-produto [produto] = "produto" [numero_pagina]="numero_pagina"></app-card-produto>
+                  </div>
+                  <!-- <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                  <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                  <div class="col-md-3"><app-card-produto></app-card-produto></div> -->
+              </div>
+          </div>
+      </div>
+    <!-- </div> -->
+  <!-- /Carousel item -->
+</div>
+<ng-template #loggedOut>
+  <!-- Carousel item-->
+  <!-- <div class="carousel-item"> -->
+    <div class="media">
+        <div class="media-body">
+            <div class="row product-grid-line">
+              <div class="col-md-3" *ngFor="let produto of produtos_filtrados">
+                <app-card-produto [produto] = "produto" [numero_pagina]="numero_pagina"></app-card-produto>
+              </div>
+                <!-- <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                <div class="col-md-3"><app-card-produto></app-card-produto></div>
+                <div class="col-md-3"><app-card-produto></app-card-produto></div> -->
+            </div>
+        </div>
+    </div>
+  <!-- </div> -->
+<!-- /Carousel item -->
+</ng-template>

@@ -14,6 +14,8 @@ export class CardEstabelecimentoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.estabelecimento)
+  }
 
 }

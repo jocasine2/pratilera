@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/models/produto';
+import { Component, Input, OnInit } from '@angular/core';
+import{ GlobalConstants } from '../../global-constants';
 
 @Component({
   selector: 'app-card-produto-detalhe-produto',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProdutoDetalheProdutoComponent implements OnInit {
 
-  constructor() { }
+  @Input() produto!: Produto;
+  apiURL!: string;
+  constructor() {
+    this.apiURL = GlobalConstants.apiURL
+   }
 
   ngOnInit(): void {
   }
